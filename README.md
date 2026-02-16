@@ -9,6 +9,8 @@ Objective:
 To build a fault-tolerant, resumable ML training pipeline using Temporal workflows for training a PointNet++ Autoencoder on 3D point cloud data.
 
 
+## Dataset Download: 
+[Dataset](https://huggingface.co/datasets/BGLab/MaizeField3D)
 
 ```
 Execution Flow:
@@ -143,3 +145,28 @@ Test and validation data Reconstruction:
 ![test_data_reconstruction](assets/test_comparisons.png)
 ![test_data_reconstruction](assets/validation_comparisons.png)
 
+
+## References: 
+```
+@misc{qi2017pointnetdeephierarchicalfeature,
+      title={PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space}, 
+      author={Charles R. Qi and Li Yi and Hao Su and Leonidas J. Guibas},
+      year={2017},
+      eprint={1706.02413},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/1706.02413}, 
+}
+```
+
+```
+@misc{kimara2025maizefield3dcurated3dpoint,
+      title={MaizeField3D: A Curated 3D Point Cloud and Procedural Model Dataset of Field-Grown Maize from a Diversity Panel}, 
+      author={Elvis Kimara and Mozhgan Hadadi and Jackson Godbersen and Aditya Balu and Talukder Jubery and Yawei Li and Adarsh Krishnamurthy and Patrick S. Schnable and Baskar Ganapathysubramanian},
+      year={2025},
+      eprint={2503.07813},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2503.07813}, 
+}
+```
