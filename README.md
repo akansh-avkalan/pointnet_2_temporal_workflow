@@ -84,3 +84,42 @@ pointnet_temporal/
 └── README.md
 
 ```
+
+
+## Pipeline Steps
+
+### 1. Preprocessing
+- Loads .ply files (10K points)
+- Applies Farthest Point Sampling → 2048 points
+- Normalizes to unit sphere
+- Saves as .npz
+- Resume-safe: skips processed files
+
+### 2. Training
+- Loads preprocessed data
+- 80/20 train/validation split
+- PointNet++ autoencoder with MSG (Multi-Scale Grouping)
+- Chamfer distance loss
+- Saves checkpoints every 10 epochs
+- Resume-safe: continues from last checkpoint
+- Final model saved after training
+
+## Model Architecture
+
+**Encoder**: 3 Set Abstraction layers with MSG
+- SA1: 2048 → 1024 points
+- SA2: 1024 → 256 points  
+- SA3: 256 → 64 points
+- Global max pooling → latent vector (128-dim)
+
+**Decoder**: MLP
+- 128-dim latent → 2048x3 point cloud
+
+## Checkpointing
+
+Checkpoints saved to `outputs/checkpoints/`:
+- `checkpoint_latest.pt` - Latest checkpoint (every 10 epochs)
+- `checkpoint_epoch_N.pt` - Snapshot every 50 epochs
+- `pointnetpp_ae_final.pt` - Final trained model
+
+Resume training automatically by restarting the workflow.

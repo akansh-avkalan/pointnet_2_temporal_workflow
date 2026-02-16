@@ -1,15 +1,21 @@
+# configs/train_config.py
+
 from dataclasses import dataclass
+
 
 @dataclass
 class TrainConfig:
-    processed_data_path: str = "outputs/processed"
+    batch_size: int = 8
+    num_epochs: int = 200
+    learning_rate: float = 1e-3
+    num_workers: int = 4
+    
+    latent_dim: int = 128
+    num_points: int = 2048
+    
     checkpoint_dir: str = "outputs/checkpoints"
-    log_path: str = "outputs/logs/train_log.txt"
-
-    batch_size: int = 16
-    epochs: int = 200
-    lr: float = 1e-3
-    weight_decay: float = 1e-4
-
-    resume: bool = True
-    device: str = "cuda"
+    checkpoint_interval: int = 10
+    snapshot_interval: int = 50
+    val_interval: int = 10
+    
+    train_split: float = 0.8

@@ -7,6 +7,7 @@ from temporalio.worker import Worker
 from shared import TASK_QUEUE
 from workflow.run_ml_workflow import MLPipelineWorkflow
 from activities.preprocess_data import preprocess_activity
+from activities.train_pointnet_2 import train_activity
 
 
 async def main():
@@ -16,7 +17,7 @@ async def main():
         client,
         task_queue=TASK_QUEUE,
         workflows=[MLPipelineWorkflow],
-        activities=[preprocess_activity],
+        activities=[preprocess_activity, train_activity],
     )
     
     print(f"Worker started. Listening on task queue: {TASK_QUEUE}")

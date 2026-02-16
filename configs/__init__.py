@@ -10,5 +10,6 @@ Contains configuration dataclasses for:
 """
 
 from configs.dataset_config import DatasetConfig
+from configs.train_config import TrainConfig
 
-__all__ = ["DatasetConfig"]
+__all__ = ["DatasetConfig", "TrainConfig"]
