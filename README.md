@@ -9,8 +9,9 @@ Objective:
 To build a fault-tolerant, resumable ML training pipeline using Temporal workflows for training a PointNet++ Autoencoder on 3D point cloud data.
 
 
-## Dataset Download: 
-[Dataset](https://huggingface.co/datasets/BGLab/MaizeField3D)
+## Dataset Download:
+MaizeField3D: A Curated 3D Point Cloud Dataset of Field-Grown Plants From A Maize Diversity Panel 
+[Dataset Download:](https://huggingface.co/datasets/BGLab/MaizeField3D)
 
 ```
 Execution Flow:
