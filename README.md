@@ -26,8 +26,7 @@ MLPipelineWorkflow
 Return trained model path
 ```
 
-
-
+## Folder Structure:
 ```
 Folder Structure: 
 
