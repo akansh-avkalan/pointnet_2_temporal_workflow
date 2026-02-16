@@ -1,0 +1,216 @@
+Epoch [1/200] | Train: 0.115482
+Epoch [2/200] | Train: 0.102638
+Epoch [3/200] | Train: 0.098050
+Epoch [4/200] | Train: 0.094809
+Epoch [5/200] | Train: 0.091374
+Epoch [6/200] | Train: 0.089242
+Epoch [7/200] | Train: 0.087530
+Epoch [8/200] | Train: 0.089256
+Epoch [9/200] | Train: 0.095557
+Epoch [10/200] | Train: 0.089933 | Val: 0.089313
+Epoch [11/200] | Train: 0.088179
+Epoch [12/200] | Train: 0.086077
+Epoch [13/200] | Train: 0.085335
+Epoch [14/200] | Train: 0.084339
+Epoch [15/200] | Train: 0.083694
+Epoch [16/200] | Train: 0.083299
+Epoch [17/200] | Train: 0.082213
+Epoch [18/200] | Train: 0.080852
+Epoch [19/200] | Train: 0.081310
+Epoch [20/200] | Train: 0.080352 | Val: 0.085408
+Epoch [21/200] | Train: 0.079068
+Epoch [22/200] | Train: 0.078858
+Epoch [23/200] | Train: 0.077788
+Epoch [24/200] | Train: 0.077816
+Epoch [25/200] | Train: 0.076653
+Epoch [26/200] | Train: 0.076753
+Epoch [27/200] | Train: 0.076776
+Epoch [28/200] | Train: 0.076440
+Epoch [29/200] | Train: 0.074943
+Epoch [30/200] | Train: 0.075176 | Val: 0.079897
+Epoch [31/200] | Train: 0.073962
+Epoch [32/200] | Train: 0.073627
+Epoch [33/200] | Train: 0.072892
+Epoch [34/200] | Train: 0.073537
+Epoch [35/200] | Train: 0.073596
+Epoch [36/200] | Train: 0.072324
+Epoch [37/200] | Train: 0.072150
+Epoch [38/200] | Train: 0.071681
+Epoch [39/200] | Train: 0.070518
+Epoch [40/200] | Train: 0.070593 | Val: 0.080951
+Epoch [41/200] | Train: 0.070586
+Epoch [42/200] | Train: 0.070406
+Epoch [43/200] | Train: 0.069423
+Epoch [44/200] | Train: 0.069164
+Epoch [45/200] | Train: 0.069144
+Epoch [46/200] | Train: 0.068902
+Epoch [47/200] | Train: 0.068139
+Epoch [48/200] | Train: 0.068575
+Epoch [49/200] | Train: 0.068466
+Epoch [50/200] | Train: 0.068068 | Val: 0.077934
+Epoch [51/200] | Train: 0.067313
+Epoch [52/200] | Train: 0.066930
+Epoch [53/200] | Train: 0.066454
+Epoch [54/200] | Train: 0.067238
+Epoch [55/200] | Train: 0.066837
+Epoch [56/200] | Train: 0.066622
+Epoch [57/200] | Train: 0.066096
+Epoch [58/200] | Train: 0.066004
+Epoch [59/200] | Train: 0.065596
+Epoch [60/200] | Train: 0.065428 | Val: 0.078758
+Epoch [61/200] | Train: 0.064548
+Epoch [62/200] | Train: 0.064810
+Epoch [63/200] | Train: 0.064017
+Epoch [64/200] | Train: 0.064376
+Epoch [65/200] | Train: 0.064776
+Epoch [66/200] | Train: 0.064284
+Epoch [67/200] | Train: 0.064319
+Epoch [68/200] | Train: 0.064230
+Epoch [69/200] | Train: 0.062906
+Epoch [70/200] | Train: 0.063323 | Val: 0.078363
+Epoch [71/200] | Train: 0.062914
+Epoch [72/200] | Train: 0.062714
+Epoch [73/200] | Train: 0.062105
+Epoch [74/200] | Train: 0.062121
+Epoch [75/200] | Train: 0.061850
+Epoch [76/200] | Train: 0.061794
+Epoch [77/200] | Train: 0.061540
+Epoch [78/200] | Train: 0.060873
+Epoch [79/200] | Train: 0.060781
+Epoch [80/200] | Train: 0.060842 | Val: 0.077559
+Epoch [81/200] | Train: 0.060789
+Epoch [82/200] | Train: 0.060987
+Epoch [83/200] | Train: 0.060301
+Epoch [84/200] | Train: 0.060431
+Epoch [85/200] | Train: 0.060228
+Epoch [86/200] | Train: 0.059446
+Epoch [87/200] | Train: 0.059586
+Epoch [88/200] | Train: 0.059576
+Epoch [89/200] | Train: 0.059441
+Epoch [90/200] | Train: 0.059138 | Val: 0.077301
+Epoch [91/200] | Train: 0.058672
+Epoch [92/200] | Train: 0.058784
+Epoch [93/200] | Train: 0.058826
+Epoch [94/200] | Train: 0.058162
+Epoch [95/200] | Train: 0.058015
+Epoch [96/200] | Train: 0.058304
+Epoch [97/200] | Train: 0.058327
+Epoch [98/200] | Train: 0.057750
+Epoch [99/200] | Train: 0.057986
+Epoch [100/200] | Train: 0.057389 | Val: 0.077154
+Epoch [101/200] | Train: 0.057595
+Epoch [102/200] | Train: 0.056942
+Epoch [103/200] | Train: 0.056642
+Epoch [104/200] | Train: 0.056674
+Epoch [105/200] | Train: 0.056485
+Epoch [106/200] | Train: 0.056314
+Epoch [107/200] | Train: 0.056467
+Epoch [108/200] | Train: 0.056584
+Epoch [109/200] | Train: 0.055842
+Epoch [110/200] | Train: 0.055557 | Val: 0.077674
+Epoch [111/200] | Train: 0.055589
+Epoch [112/200] | Train: 0.055667
+Epoch [113/200] | Train: 0.055330
+Epoch [114/200] | Train: 0.055214
+Epoch [115/200] | Train: 0.055907
+Epoch [116/200] | Train: 0.055132
+Epoch [117/200] | Train: 0.054830
+Epoch [118/200] | Train: 0.054236
+Epoch [119/200] | Train: 0.054080
+Epoch [120/200] | Train: 0.054715 | Val: 0.078577
+Epoch [121/200] | Train: 0.054869
+Epoch [122/200] | Train: 0.054154
+Epoch [123/200] | Train: 0.053942
+Epoch [124/200] | Train: 0.053690
+Epoch [125/200] | Train: 0.053914
+Epoch [126/200] | Train: 0.053911
+Epoch [127/200] | Train: 0.053612
+Epoch [128/200] | Train: 0.053797
+Epoch [129/200] | Train: 0.054224
+Epoch [130/200] | Train: 0.053985 | Val: 0.077797
+Epoch [131/200] | Train: 0.053790
+Epoch [132/200] | Train: 0.053386
+Epoch [133/200] | Train: 0.053350
+Epoch [134/200] | Train: 0.053159
+Epoch [135/200] | Train: 0.052978
+Epoch [136/200] | Train: 0.053093
+Epoch [137/200] | Train: 0.052923
+Epoch [138/200] | Train: 0.052801
+Epoch [139/200] | Train: 0.052436
+Epoch [140/200] | Train: 0.052531 | Val: 0.078234
+Epoch [141/200] | Train: 0.052229
+Epoch [142/200] | Train: 0.051676
+Epoch [143/200] | Train: 0.052416
+Epoch [144/200] | Train: 0.052648
+Epoch [145/200] | Train: 0.052011
+Epoch [141/200] | Train: 0.051891
+Epoch [142/200] | Train: 0.052130
+Epoch [143/200] | Train: 0.052003
+Epoch [144/200] | Train: 0.052216
+Epoch [145/200] | Train: 0.052210
+Epoch [146/200] | Train: 0.052207
+Epoch [147/200] | Train: 0.051674
+Epoch [148/200] | Train: 0.051094
+Epoch [149/200] | Train: 0.051298
+Epoch [150/200] | Train: 0.051393 | Val: 0.078106
+Epoch [151/200] | Train: 0.051752
+Epoch [152/200] | Train: 0.051325
+Epoch [153/200] | Train: 0.050982
+Epoch [154/200] | Train: 0.051048
+Epoch [155/200] | Train: 0.051236
+Epoch [156/200] | Train: 0.051121
+Epoch [157/200] | Train: 0.050972
+Epoch [158/200] | Train: 0.050913
+Epoch [159/200] | Train: 0.050617
+Epoch [160/200] | Train: 0.050134 | Val: 0.078946
+Epoch [161/200] | Train: 0.050224
+Epoch [162/200] | Train: 0.049924
+Epoch [163/200] | Train: 0.050139
+Epoch [164/200] | Train: 0.050121
+Epoch [165/200] | Train: 0.050556
+Epoch [166/200] | Train: 0.050040
+Epoch [167/200] | Train: 0.049848
+Epoch [168/200] | Train: 0.050037
+Epoch [169/200] | Train: 0.050185
+Epoch [170/200] | Train: 0.049974 | Val: 0.078912
+Epoch [171/200] | Train: 0.050027
+Epoch [172/200] | Train: 0.049814
+Epoch [173/200] | Train: 0.049306
+Epoch [174/200] | Train: 0.049091
+Epoch [175/200] | Train: 0.049232
+Epoch [176/200] | Train: 0.049545
+Epoch [177/200] | Train: 0.049640
+Epoch [178/200] | Train: 0.049495
+Epoch [179/200] | Train: 0.049484
+Epoch [180/200] | Train: 0.049520 | Val: 0.079472
+Epoch [181/200] | Train: 0.049506
+Epoch [182/200] | Train: 0.049183
+Epoch [183/200] | Train: 0.049419
+Epoch [184/200] | Train: 0.049449
+Epoch [185/200] | Train: 0.048634
+Epoch [186/200] | Train: 0.048887
+Epoch [187/200] | Train: 0.048302
+Epoch [188/200] | Train: 0.048279
+Epoch [189/200] | Train: 0.048282
+Epoch [190/200] | Train: 0.048488 | Val: 0.079851
+Epoch [191/200] | Train: 0.048777
+Epoch [192/200] | Train: 0.048535
+Epoch [193/200] | Train: 0.048376
+Epoch [194/200] | Train: 0.048559
+Epoch [195/200] | Train: 0.048527
+Epoch [196/200] | Train: 0.047932
+Epoch [197/200] | Train: 0.048125
+Epoch [198/200] | Train: 0.047785
+Epoch [199/200] | Train: 0.048120
+Epoch [200/200] | Train: 0.048194 | Val: 0.079438
+Training started: 2026-02-16 17:36:22.133100
+Starting from epoch 140
+Epoch [141/200] | Train Loss: 0.047785
+Epoch [142/200] | Train Loss: 0.047912
+Epoch [143/200] | Train Loss: 0.048004
+Training started: 2026-02-16 17:38:29.744516
+Starting from epoch 200
+Training complete: 2026-02-16 17:38:29.818682
+Training started: 2026-02-16 17:44:45.104580
+Starting from epoch 200
+Training complete: 2026-02-16 17:44:45.202920

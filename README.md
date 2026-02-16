@@ -75,7 +75,11 @@ pointnet_temporal/
 │   ├── visualization.py              # Plots & comparison charts
 │   └── checkpoint.py                 # Resume utilities (optional but recommended)
 │
-├── outputs/
+├── assets
+│    ├── test_comparision.png         # Reconstruction of Test dataset
+│    └── validation_comparision.png   # Reconstruction of Val dataset
+│
+├── outputs/                          # Created automatically
 │   ├── processed/                    # Preprocessed .npz dataset
 │   ├── checkpoints/                  # Model checkpoints
 │   ├── logs/                         # Training logs
@@ -133,4 +137,9 @@ Resume training automatically by restarting the workflow.
   - Latent space analysis (PCA + t-SNE)
 - **Exports**: Reconstructed point clouds as .ply files
 - **Splits**: Evaluates both validation and test sets
+
+## Results: 
+Test and validation data Reconstruction: 
+![test_data_reconstruction](assets/test_comparisons.png)
+![test_data_reconstruction](assets/validation_comparisons.png)
 
