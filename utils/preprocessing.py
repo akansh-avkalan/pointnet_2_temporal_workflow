@@ -4,10 +4,10 @@
 
 import numpy as np
 
-def load_ply_numpy(path, o3d):
+def load_ply_numpy(path):
     pcd = o3d.io.read_point_cloud(path)
-    return np.asarray(pcd.points).astype(np.float32)
-
+    pts = np.asarray(pcd.points).astype(np.float32)
+    return pts
 
 def normalize_pointcloud(points):
     centroid = points.mean(axis=0)
@@ -15,7 +15,6 @@ def normalize_pointcloud(points):
     scale = np.max(np.linalg.norm(points, axis=1))
     points = points / (scale + 1e-9)
     return points, centroid, scale
-
 
 def farthest_point_sample_numpy(points, n_samples):
     N = points.shape[0]
@@ -31,7 +30,8 @@ def farthest_point_sample_numpy(points, n_samples):
         centroid = points[farthest]
         dist = np.sum((points - centroid) ** 2, axis=1)
         mask = dist < distances
-        distances[mask] = dist
+        distances[mask] = dist[mask]
         farthest = np.argmax(distances)
 
     return centroids
+
