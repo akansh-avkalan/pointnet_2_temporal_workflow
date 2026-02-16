@@ -1,6 +1,3 @@
-# Worker : Define the task queue it will pick task and workflow name.
-
-
 # worker.py
 
 import asyncio
@@ -9,27 +6,21 @@ from temporalio.worker import Worker
 
 from shared import TASK_QUEUE
 from workflow.run_ml_workflow import MLPipelineWorkflow
-from activities.preprocess_data import preprocess_data
+from activities.preprocess_data import preprocess_activity
 
 
 async def main():
-    """
-    Starts Temporal worker.
-    """
-
-    # Connect to Temporal server
     client = await Client.connect("localhost:7233")
-
-    # Create worker
+    
     worker = Worker(
         client,
         task_queue=TASK_QUEUE,
         workflows=[MLPipelineWorkflow],
-        activities=[preprocess_data],
+        activities=[preprocess_activity],
     )
-
-    print("Worker started. Listening on task queue:", TASK_QUEUE)
-
+    
+    print(f"Worker started. Listening on task queue: {TASK_QUEUE}")
+    
     await worker.run()
 
 

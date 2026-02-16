@@ -1,39 +1,33 @@
-# workflow/run_ml_workflow.py
-# Import - Shared (config), activities, Interact with files inside activity. 
-# Exection flow -> Preprocess dataset -> Train the model -> Evaluate the model
-
-# workflows/run_ml_workflow.py
+# workflow/ml_pipeline_workflow.py
 
 from datetime import timedelta
 from temporalio import workflow
 from temporalio.common import RetryPolicy
 
-from shared import MLPipelineInput
-from activities.preprocess_data import preprocess_data
+with workflow.unsafe.imports_passed_through():
+    from shared import MLPipelineInput
+    from activities.preprocess_data import preprocess_activity
 
 
 @workflow.defn
 class MLPipelineWorkflow:
-
+    
     @workflow.run
-    async def run(self, pipeline_input: MLPipelineInput) -> str:
-        """
-        Orchestrates the ML pipeline.
-
-        Current step:
-        1. Preprocess dataset
-
-        Returns:
-            str: Path to processed dataset
-        """
-
-        processed_path = await workflow.execute_activity(
-            preprocess_data,
-            pipeline_input.dataset_config,
-            start_to_close_timeout=timedelta(hours=2),
-            retry_policy=RetryPolicy(
-                maximum_attempts=3
-            ),
+    async def run(self, input: MLPipelineInput) -> str:
+        
+        preprocessing_retry_policy = RetryPolicy(
+            initial_interval=timedelta(seconds=5),
+            maximum_interval=timedelta(minutes=1),
+            maximum_attempts=3,
+            backoff_coefficient=2.0,
         )
-
-        return processed_path
+        
+        processed_data_path = await workflow.execute_activity(
+            preprocess_activity,
+            input.dataset_config,
+            start_to_close_timeout=timedelta(hours=2),
+            retry_policy=preprocessing_retry_policy,
+            heartbeat_timeout=timedelta(minutes=5),
+        )
+        
+        return processed_data_path

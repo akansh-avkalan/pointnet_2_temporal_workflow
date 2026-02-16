@@ -1,5 +1,22 @@
-temporalio
-torch 
-numpy
-datetime
-open3d 
+# requirements.txt
+
+# Core Temporal dependencies
+temporalio==1.5.1
+
+# Point cloud processing
+open3d==0.18.0
+numpy==1.24.3
+
+# Progress bar
+tqdm==4.66.1
+
+# Deep learning (for future training steps)
+torch==2.1.0
+torchvision==0.16.0
+
+# Visualization (for future evaluation)
+matplotlib==3.8.0
+seaborn==0.13.0
+
+# Utilities
+pyyaml==6.0.1
