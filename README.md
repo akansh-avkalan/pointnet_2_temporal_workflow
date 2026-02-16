@@ -123,3 +123,14 @@ Checkpoints saved to `outputs/checkpoints/`:
 - `pointnetpp_ae_final.pt` - Final trained model
 
 Resume training automatically by restarting the workflow.
+
+### 3. Evaluation (Optional)
+- **Metrics**: Chamfer distance (mean, median, std, min, max, 95th percentile)
+- **Visualizations**:
+  - Side-by-side comparison (original vs reconstructed)
+  - Chamfer distance distribution (histogram + boxplot)
+  - Training/validation loss curves
+  - Latent space analysis (PCA + t-SNE)
+- **Exports**: Reconstructed point clouds as .ply files
+- **Splits**: Evaluates both validation and test sets
+
